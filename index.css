@@ -6,16 +6,21 @@
         height:500vh;
 
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 body{
-    background-color: rgb(238, 238, 238)
+    background-color: rgb(238, 238, 238);
+    scroll-behavior: sm;
 }
 #navbar{
-    /* border: 2px solid tomato; */
     display: flex;
     justify-content: space-between;
     gap: 30px;
     padding:35px;
     padding-right: 100px ;
+    
 
 
   
@@ -32,7 +37,6 @@ body{
     gap: 30px;
 }
 #content{
-    margin-left: 300px;
     font-family: Work Sans ;
     margin-top: 100px;
 
@@ -40,19 +44,14 @@ body{
 #Name{
     color: rgb(19, 187, 187);
 }
-/* #circle{
-    border-radius:49% 51% 48% 52% / 39% 38% 62% 61%;
-    border: 2px solid red;
-    padding: 150px;
-    margin-right: 15rem;
-    margin-top:50px ;
-    background-image: url(/a.png);
-    center;
-} */
 #hero{
     display:flex;
-    /* justify-content: space-between; */
+    justify-content: center;
+    height:600px;
     gap: 200px;
+
+    
+    
 }
 #resumebutton{
     /* border:2px solid red; */
@@ -146,8 +145,52 @@ body{
 #c-image{
     width:150px;
     height:180px;
+    
 
 }
+
+@media screen and (max-width: 800px) { 
+    #main{
+        height:400vh;
+        width:99vw;
+        margin:0px;
+        
+
+    }
+
+    #hero{
+        
+        /* if screen view port is small  */
+        flex-wrap: wrap-reverse;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    #content{
+        margin-top: 2px;
+        text-align: center;
+    }
+    #projects_container,#skills_container{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    #icons_container{
+        justify-content: center;
+    }
+    .heading{
+        text-align: center;
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .project_container{
+        margin-left: 0px;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+} 
 
 
 
